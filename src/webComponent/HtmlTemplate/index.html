@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- ES Modules -->
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <template id="my-template">
+        <style>
+          p {
+            color: yellow;
+            background-color: red;
+            padding: 10px;
+          }
+        </style>
+        <p>My template
+            <slot name="my-slot">默认文本</slot>
+        </p>
+    </template>
+    <my-template>
+        <span slot="my-slot">你好，我是一个槽</span>
+    </my-template>
+  </body>
+</html>
+<script>
+    document.querySelector('html').addEventListener('click',function(e) {
+        console.log(e.composed);
+        console.log(e.composedPath());
+    });
+</script>

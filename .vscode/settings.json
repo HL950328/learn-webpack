@@ -1,0 +1,28 @@
+{
+    "editor.inlineSuggest.enabled": true,
+    "js/ts.implicitProjectConfig.experimentalDecorators": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": true,
+        "markdown": false
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.autoSave": "onFocusChange",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        // 保存自动修复
+        // Enable/disable default JavaScript formatter (For Prettier)
+        "javascript.format.enable": true,
+        "prettier.singleQuote": true,
+        // 点击保存时，根据 eslint 规则自定修复，同时集成 prettier 到 eslint 中
+        "prettier.eslintIntegration": true,
+        // stylelint 自动修复
+        "source.fixAll.stylelint": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+}
